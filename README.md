@@ -40,3 +40,34 @@ B) R-Squared
 1) R-squared measures the proportion of the variance in the dependent variable that is predictable from the independent variables, thus indicating how well the model fits the data.
 2) R-squared has a bounded range and thus it improves the interpretability of the results obtained.
 
+
+## Inferences:
+Generally, the models with complex learning objective for e.g: xg Boost tend to perform better than simpler models such as linear regression. However in this case we find the right opposite, The linear regression model performs the best among the other models whereas XG Boost has the highest MSE loss.
+
+ This could be due to the following factors:
+
+1) The association between the data is simpler hence more complex models overfit.
+
+2) The size of the training data is only 800 records, which is quite small. This could be another reason behind such results.
+
+3) It is observed that the Decision tree performs the worst but the Random forest performs better. This is another example where the ensemble technique improves the performance.
+
+4) The same trend of MSE is reflected in R-squared loss.
+
+5) Looking at the individual plots for the predicted values of the training and testing data, we can conclude the following:
+
+5A) Models like Decision Tree Regressor and xg Boost seem to overfit as they perform well on the train set data when the prediction is made but the same on test set is quite poor.
+
+5B) Models like Support Vector Regression, Lasso Regression, Ridge Regression, and Elastic Net Regression seem to underfit as we see that for the predicted values of train set too, there is a huge variance between the actual training points and the predicted training points. This implies that the learning for the aforementioned models was poor.
+
+## Scope of Improvement:
+
+1) Since the data is less, increasing the training data should help us overcome overfitting.
+
+2) Hyperparameter tuning can help us improve the accuracies further.
+
+3) Sticking to simpler architectures due to a lack of training data is another solution that can be implemented.
+
+4) We can try doing feature selection, in an iterative manner to understand if by eliminating some features model accuracy can be improved further.
+
+5) For the underfitting models we can try running it for more iterations to see if that helps the model learn.
