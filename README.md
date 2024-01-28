@@ -22,7 +22,8 @@ Note:The rationale behind choosing these models and the results obtained with th
 To run this notebook, you must have Python installed on your system, along with the Jupyter Notebook application and several Python libraries such as pandas, numpy, scikit-learn, and matplotlib.
 
 1. Clone this repository to your local machine using:
-   git clone https://github.com/your-username/house-price-prediction.git
+   git clone [https://github.com/your-username/house-price-prediction.git](https://github.com/nayanjha16/Housing_price_prediction.git)
+   
 
 ## Evaluation Metrics
 
